@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{432887D0-97C2-45F5-9E07-2E9D6AB060BF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GMail</RootNamespace>
+    <AssemblyName>GMail</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="nunit.core">
+      <HintPath>..\libs\nunit.core.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.core.interfaces">
+      <HintPath>..\libs\nunit.core.interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.util">
+      <HintPath>..\libs\nunit.util.dll</HintPath>
+    </Reference>
+    <Reference Include="Selenium.WebDriverBackedSelenium">
+      <HintPath>..\libs\Selenium.WebDriverBackedSelenium.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="ThoughtWorks.Selenium.Core">
+      <HintPath>..\libs\ThoughtWorks.Selenium.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver">
+      <HintPath>..\libs\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support">
+      <HintPath>..\libs\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1.1\IsSentLetterInSpam.cs" />
+    <Compile Include="1.2\IsGotForwardForLetter.cs" />
+    <Compile Include="1.3\IsItPossibleToAttachFileWithSizeMoreThenPermitted.cs" />
+    <Compile Include="1.4\IsItPossibleToLoadPictureWithAnIncorrectExtension.cs" />
+    <Compile Include="1.5\SendLetterWithEmoticon.cs" />
+    <Compile Include="1.6\IsUserThemeChange.cs" />
+    <Compile Include="1.7\SendLetterWithMeeting.cs" />
+    <Compile Include="DriverAdapter\Adapter.cs" />
+    <Compile Include="gmail.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gmail.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\AlterDialogToAttachFileHandler.cs" />
+    <Compile Include="Handlers\AttachHandler.cs" />
+    <Compile Include="Handlers\EmoticonHandler.cs" />
+    <Compile Include="Handlers\ForwardAlterDialogHandler.cs" />
+    <Compile Include="Handlers\ForwardHandler.cs" />
+    <Compile Include="Handlers\LetterHandler.cs" />
+    <Compile Include="Handlers\LoginHandler.cs" />
+    <Compile Include="Handlers\LogoutHandler.cs" />
+    <Compile Include="Handlers\MailboxHandler.cs" />
+    <Compile Include="Handlers\SettingsHandler.cs" />
+    <Compile Include="Handlers\SpamHandler.cs" />
+    <Compile Include="Handlers\ThemesHandler.cs" />
+    <Compile Include="Pages\AttachFilePage.cs" />
+    <Compile Include="Pages\BasePage.cs" />
+    <Compile Include="Pages\EmoticonPage.cs" />
+    <Compile Include="Pages\ForwardAlterDialogPage.cs" />
+    <Compile Include="Pages\ForwardPage.cs" />
+    <Compile Include="Pages\LetterPage.cs" />
+    <Compile Include="Pages\LoginPage.cs" />
+    <Compile Include="Pages\LogoutPage.cs" />
+    <Compile Include="Pages\MailboxPage.cs" />
+    <Compile Include="Pages\SettingsPage.cs" />
+    <Compile Include="Pages\SpamPage.cs" />
+    <Compile Include="Pages\ThemesPage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="gmail.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>gmail.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

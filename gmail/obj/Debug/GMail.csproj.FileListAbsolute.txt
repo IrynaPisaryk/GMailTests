@@ -1,0 +1,46 @@
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\bin\Debug\GMail.dll.config
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\bin\Debug\GMail.dll
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\bin\Debug\GMail.pdb
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\bin\Debug\mscorlib.dll
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\bin\Debug\nunit.core.dll
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\bin\Debug\nunit.core.interfaces.dll
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\bin\Debug\nunit.framework.dll
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\bin\Debug\nunit.util.dll
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\bin\Debug\Selenium.WebDriverBackedSelenium.dll
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\bin\Debug\ThoughtWorks.Selenium.Core.dll
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\bin\Debug\WebDriver.dll
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\bin\Debug\WebDriver.Support.dll
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\bin\Debug\System.Web.dll
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\bin\Debug\System.Data.dll
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\bin\Debug\System.EnterpriseServices.dll
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\bin\Debug\System.Transactions.dll
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\bin\Debug\System.Data.OracleClient.dll
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\bin\Debug\ru\mscorlib.resources.dll
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\bin\Debug\normidna.nlp
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\bin\Debug\normnfc.nlp
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\bin\Debug\normnfd.nlp
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\bin\Debug\normnfkc.nlp
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\bin\Debug\normnfkd.nlp
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\bin\Debug\System.EnterpriseServices.Wrapper.dll
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\obj\Debug\GMail.dll
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\obj\Debug\GMail.pdb
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\obj\Debug\GMail.gmail.resources
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Irish\Desktop\мыльник\GMail\GMail\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\bin\Debug\GMail.dll.config
+C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\bin\Debug\GMail.dll
+C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\bin\Debug\GMail.pdb
+C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\bin\Debug\nunit.core.dll
+C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\bin\Debug\nunit.core.interfaces.dll
+C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\bin\Debug\nunit.framework.dll
+C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\bin\Debug\nunit.util.dll
+C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\bin\Debug\Selenium.WebDriverBackedSelenium.dll
+C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\bin\Debug\ThoughtWorks.Selenium.Core.dll
+C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\bin\Debug\WebDriver.dll
+C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\bin\Debug\WebDriver.Support.dll
+C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\obj\Debug\GMail.csprojResolveAssemblyReference.cache
+C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\obj\Debug\GMail.gmail.resources
+C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\obj\Debug\GMail.csproj.GenerateResource.Cache
+C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\obj\Debug\GMail.dll
+C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\obj\Debug\GMail.pdb

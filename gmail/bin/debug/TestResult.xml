@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\bin\debug\GMail.dll" total="4" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-04-24" time="19:43:40">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.5485" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.4\bin" machine-name="EPBYMINW4455" user="Iryna_Pisaryk" user-domain="MINSK" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\bin\debug\GMail.dll" executed="True" result="Success" success="True" time="22.358" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="GMail" executed="True" result="Success" success="True" time="22.336" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="_1" executed="True" result="Success" success="True" time="22.336" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="_6" executed="True" result="Success" success="True" time="22.335" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="IsUserThemeChange" executed="True" result="Success" success="True" time="22.331" asserts="0">
+                    <results>
+                      <test-case name="GMail._1._6.IsUserThemeChange._Step_A_LoginFistUser" executed="True" result="Success" success="True" time="2.595" asserts="0" />
+                      <test-case name="GMail._1._6.IsUserThemeChange._Step_B_GoToTheSettings" executed="True" result="Success" success="True" time="4.766" asserts="0" />
+                      <test-case name="GMail._1._6.IsUserThemeChange._Step_C_GetTheme" executed="True" result="Success" success="True" time="2.483" asserts="0" />
+                      <test-case name="GMail._1._6.IsUserThemeChange._Step_C_SetTheme" executed="True" result="Success" success="True" time="2.323" asserts="0" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

@@ -1,0 +1,5 @@
+URL=https://www.gmail.com/
+adressFirstUser=user1seltest@gmail.com
+adressSecondUser=user2seltest@gmail.com
+adressThirdUser=user3seltest@gmail.com
+password=Actinium
