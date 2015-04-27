@@ -1,22 +1,296 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\bin\debug\GMail.dll" total="4" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-04-24" time="19:43:40">
+<test-results name="C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\bin\debug\GMail.dll" total="35" errors="12" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-04-27" time="13:54:53">
   <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.5485" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.4\bin" machine-name="EPBYMINW4455" user="Iryna_Pisaryk" user-domain="MINSK" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\bin\debug\GMail.dll" executed="True" result="Success" success="True" time="22.358" asserts="0">
+  <test-suite type="Assembly" name="C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\bin\debug\GMail.dll" executed="True" result="Failure" success="False" time="919.816" asserts="0">
     <results>
-      <test-suite type="Namespace" name="GMail" executed="True" result="Success" success="True" time="22.336" asserts="0">
+      <test-suite type="Namespace" name="GMail" executed="True" result="Failure" success="False" time="919.783" asserts="0">
         <results>
-          <test-suite type="Namespace" name="_1" executed="True" result="Success" success="True" time="22.336" asserts="0">
+          <test-suite type="Namespace" name="_1" executed="True" result="Failure" success="False" time="919.782" asserts="0">
             <results>
-              <test-suite type="Namespace" name="_6" executed="True" result="Success" success="True" time="22.335" asserts="0">
+              <test-suite type="Namespace" name="_1" executed="True" result="Failure" success="False" time="526.173" asserts="0">
                 <results>
-                  <test-suite type="TestFixture" name="IsUserThemeChange" executed="True" result="Success" success="True" time="22.331" asserts="0">
+                  <test-suite type="TestFixture" name="IsSentLetterInSpam" executed="True" result="Failure" success="False" time="526.169" asserts="0">
                     <results>
-                      <test-case name="GMail._1._6.IsUserThemeChange._Step_A_LoginFistUser" executed="True" result="Success" success="True" time="2.595" asserts="0" />
-                      <test-case name="GMail._1._6.IsUserThemeChange._Step_B_GoToTheSettings" executed="True" result="Success" success="True" time="4.766" asserts="0" />
-                      <test-case name="GMail._1._6.IsUserThemeChange._Step_C_GetTheme" executed="True" result="Success" success="True" time="2.483" asserts="0" />
-                      <test-case name="GMail._1._6.IsUserThemeChange._Step_C_SetTheme" executed="True" result="Success" success="True" time="2.323" asserts="0" />
+                      <test-case name="GMail._1._1.IsSentLetterInSpam._Step_A_LoginFirstUser" executed="True" result="Success" success="True" time="3.379" asserts="0" />
+                      <test-case name="GMail._1._1.IsSentLetterInSpam._Step_B_SendLetterToSecondUser" executed="True" result="Success" success="True" time="53.425" asserts="0" />
+                      <test-case name="GMail._1._1.IsSentLetterInSpam._Step_C_LogoutFirstUser" executed="True" result="Success" success="True" time="1.741" asserts="0" />
+                      <test-case name="GMail._1._1.IsSentLetterInSpam._Step_D_LoginSecondUser" executed="True" result="Success" success="True" time="3.999" asserts="0" />
+                      <test-case name="GMail._1._1.IsSentLetterInSpam._Step_E_GetSentLetter" executed="True" result="Error" success="False" time="60.497" asserts="0">
+                        <failure>
+                          <message><![CDATA[OpenQA.Selenium.WebDriverException : The HTTP request to the remote WebDriver server for URL http://localhost:7055/hub/session/cabacf25-d53e-490c-bc3a-25f4b4f55c60/elements timed out after 60 seconds.
+  ----> System.Net.WebException : The operation has timed out]]></message>
+                          <stack-trace><![CDATA[at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+at OpenQA.Selenium.Firefox.FirefoxDriverCommandExecutor.Execute(Command commandToExecute)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver.FindElements(String mechanism, String value)
+at OpenQA.Selenium.By.FindElements(ISearchContext context)
+at GMail.Pages.MailboxPage.GetSentMessage(String theme, String text) in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\Pages\MailboxPage.cs:line 124
+at GMail.Pages.MailboxPage.ClickIntoSentMessage(String theme, String text) in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\Pages\MailboxPage.cs:line 98
+at GMail.Handlers.MailboxHandler.GetLetter(String theme, String text) in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\Handlers\MailboxHandler.cs:line 64
+at GMail._1._1.IsSentLetterInSpam._Step_E_GetSentLetter() in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\1.1\IsSentLetterInSpam.cs:line 65
+--WebException
+at System.Net.HttpWebRequest.GetResponse()
+at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="GMail._1._1.IsSentLetterInSpam._Step_F_SendLetterIntoSpam" executed="True" result="Error" success="False" time="0.016" asserts="0">
+                        <failure>
+                          <message><![CDATA[System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+                          <stack-trace><![CDATA[at GMail._1._1.IsSentLetterInSpam._Step_F_SendLetterIntoSpam() in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\1.1\IsSentLetterInSpam.cs:line 71
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="GMail._1._1.IsSentLetterInSpam._Step_G_LogoutSecondUser" executed="True" result="Error" success="False" time="60.018" asserts="0">
+                        <failure>
+                          <message><![CDATA[OpenQA.Selenium.WebDriverException : The HTTP request to the remote WebDriver server for URL http://localhost:7055/hub/session/cabacf25-d53e-490c-bc3a-25f4b4f55c60/element timed out after 60 seconds.
+  ----> System.Net.WebException : The operation has timed out]]></message>
+                          <stack-trace><![CDATA[at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+at OpenQA.Selenium.Firefox.FirefoxDriverCommandExecutor.Execute(Command commandToExecute)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+at OpenQA.Selenium.By.FindElement(ISearchContext context)
+at OpenQA.Selenium.Support.PageObjects.DefaultElementLocatorFactory.LocateElement(ISearchContext searchContext, IEnumerable`1 bys)
+at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Click()
+at GMail.Pages.LogoutPage.TapIntoAccountsButton() in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\Pages\LogoutPage.cs:line 28
+at GMail.Handlers.LogoutHandler.LogoutUser() in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\Handlers\LogoutHandler.cs:line 23
+at GMail._1._1.IsSentLetterInSpam._Step_G_LogoutSecondUser() in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\1.1\IsSentLetterInSpam.cs:line 77
+--WebException
+at System.Net.HttpWebRequest.GetResponse()
+at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="GMail._1._1.IsSentLetterInSpam._Step_H_LoginFirstUser" executed="True" result="Error" success="False" time="60.022" asserts="0">
+                        <failure>
+                          <message><![CDATA[OpenQA.Selenium.WebDriverException : The HTTP request to the remote WebDriver server for URL http://localhost:7055/hub/session/cabacf25-d53e-490c-bc3a-25f4b4f55c60/element timed out after 60 seconds.
+  ----> System.Net.WebException : The operation has timed out]]></message>
+                          <stack-trace><![CDATA[at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+at OpenQA.Selenium.Firefox.FirefoxDriverCommandExecutor.Execute(Command commandToExecute)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+at OpenQA.Selenium.By.FindElement(ISearchContext context)
+at OpenQA.Selenium.Support.PageObjects.DefaultElementLocatorFactory.LocateElement(ISearchContext searchContext, IEnumerable`1 bys)
+at OpenQA.Selenium.Support.PageObjects.WebElementProxy.SendKeys(String text)
+at GMail.Pages.LoginPage.SetEmail(String adress) in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\Pages\loginPage.cs:line 35
+at GMail.Handlers.LoginHandler.LoginUser(String adress, String password) in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\Handlers\LoginHandler.cs:line 24
+at GMail._1._1.IsSentLetterInSpam._Step_H_LoginFirstUser() in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\1.1\IsSentLetterInSpam.cs:line 84
+--WebException
+at System.Net.HttpWebRequest.GetResponse()
+at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="GMail._1._1.IsSentLetterInSpam._Step_I_SendLetterToSecondUser" executed="True" result="Error" success="False" time="60.018" asserts="0">
+                        <failure>
+                          <message><![CDATA[OpenQA.Selenium.WebDriverException : The HTTP request to the remote WebDriver server for URL http://localhost:7055/hub/session/cabacf25-d53e-490c-bc3a-25f4b4f55c60/element timed out after 60 seconds.
+  ----> System.Net.WebException : The operation has timed out]]></message>
+                          <stack-trace><![CDATA[at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+at OpenQA.Selenium.Firefox.FirefoxDriverCommandExecutor.Execute(Command commandToExecute)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+at OpenQA.Selenium.By.FindElement(ISearchContext context)
+at OpenQA.Selenium.Support.PageObjects.DefaultElementLocatorFactory.LocateElement(ISearchContext searchContext, IEnumerable`1 bys)
+at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Click()
+at GMail.Pages.MailboxPage.TapIntoWriteButton() in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\Pages\MailboxPage.cs:line 59
+at GMail.Handlers.MailboxHandler.SendLetterToUser() in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\Handlers\MailboxHandler.cs:line 29
+at GMail._1._1.IsSentLetterInSpam._Step_I_SendLetterToSecondUser() in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\1.1\IsSentLetterInSpam.cs:line 90
+--WebException
+at System.Net.HttpWebRequest.GetResponse()
+at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="GMail._1._1.IsSentLetterInSpam._Step_J_LogoutFirstUser" executed="True" result="Error" success="False" time="60.017" asserts="0">
+                        <failure>
+                          <message><![CDATA[OpenQA.Selenium.WebDriverException : The HTTP request to the remote WebDriver server for URL http://localhost:7055/hub/session/cabacf25-d53e-490c-bc3a-25f4b4f55c60/element timed out after 60 seconds.
+  ----> System.Net.WebException : The operation has timed out]]></message>
+                          <stack-trace><![CDATA[at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+at OpenQA.Selenium.Firefox.FirefoxDriverCommandExecutor.Execute(Command commandToExecute)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+at OpenQA.Selenium.By.FindElement(ISearchContext context)
+at OpenQA.Selenium.Support.PageObjects.DefaultElementLocatorFactory.LocateElement(ISearchContext searchContext, IEnumerable`1 bys)
+at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Click()
+at GMail.Pages.LogoutPage.TapIntoAccountsButton() in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\Pages\LogoutPage.cs:line 28
+at GMail.Handlers.LogoutHandler.LogoutUser() in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\Handlers\LogoutHandler.cs:line 23
+at GMail._1._1.IsSentLetterInSpam._Step_J_LogoutFirstUser() in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\1.1\IsSentLetterInSpam.cs:line 98
+--WebException
+at System.Net.HttpWebRequest.GetResponse()
+at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="GMail._1._1.IsSentLetterInSpam._Step_K_LoginSecondUser" executed="True" result="Error" success="False" time="60.018" asserts="0">
+                        <failure>
+                          <message><![CDATA[OpenQA.Selenium.WebDriverException : The HTTP request to the remote WebDriver server for URL http://localhost:7055/hub/session/cabacf25-d53e-490c-bc3a-25f4b4f55c60/element timed out after 60 seconds.
+  ----> System.Net.WebException : The operation has timed out]]></message>
+                          <stack-trace><![CDATA[at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+at OpenQA.Selenium.Firefox.FirefoxDriverCommandExecutor.Execute(Command commandToExecute)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+at OpenQA.Selenium.By.FindElement(ISearchContext context)
+at OpenQA.Selenium.Support.PageObjects.DefaultElementLocatorFactory.LocateElement(ISearchContext searchContext, IEnumerable`1 bys)
+at OpenQA.Selenium.Support.PageObjects.WebElementProxy.SendKeys(String text)
+at GMail.Pages.LoginPage.SetEmail(String adress) in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\Pages\loginPage.cs:line 35
+at GMail.Handlers.LoginHandler.LoginUser(String adress, String password) in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\Handlers\LoginHandler.cs:line 24
+at GMail._1._1.IsSentLetterInSpam._Step_K_LoginSecondUser() in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\1.1\IsSentLetterInSpam.cs:line 104
+--WebException
+at System.Net.HttpWebRequest.GetResponse()
+at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="GMail._1._1.IsSentLetterInSpam._Step_L_GoIntoSpam" executed="True" result="Success" success="True" time="55.667" asserts="0" />
+                      <test-case name="GMail._1._1.IsSentLetterInSpam._Step_M_IsNeededLetterInSpam" executed="True" result="Failure" success="False" time="22.046" asserts="1">
+                        <failure>
+                          <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                          <stack-trace><![CDATA[at GMail._1._1.IsSentLetterInSpam._Step_M_IsNeededLetterInSpam() in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\1.1\IsSentLetterInSpam.cs:line 116
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="Namespace" name="_2" executed="True" result="Failure" success="False" time="206.666" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="IsGotForwardForLetter" executed="True" result="Failure" success="False" time="206.666" asserts="0">
+                    <results>
+                      <test-case name="GMail._1._2.IsGotForwardForLetter._Step_A_LoginSecondUser" executed="True" result="Success" success="True" time="2.219" asserts="0" />
+                      <test-case name="GMail._1._2.IsGotForwardForLetter._Step_B_MoveIntoSettings" executed="True" result="Success" success="True" time="4.752" asserts="0" />
+                      <test-case name="GMail._1._2.IsGotForwardForLetter._Step_C_MoveIntoFofward" executed="True" result="Success" success="True" time="5.032" asserts="0" />
+                      <test-case name="GMail._1._2.IsGotForwardForLetter._Step_D_SetForwardAdress" executed="True" result="Success" success="True" time="1.040" asserts="0" />
+                      <test-case name="GMail._1._2.IsGotForwardForLetter._Step_E_SetFofwardParams" executed="True" result="Error" success="False" time="61.325" asserts="0">
+                        <failure>
+                          <message><![CDATA[OpenQA.Selenium.WebDriverException : The HTTP request to the remote WebDriver server for URL http://localhost:7055/hub/session/d37ff31e-b816-4f3f-923c-86ef233c82cc/element timed out after 60 seconds.
+  ----> System.Net.WebException : The operation has timed out]]></message>
+                          <stack-trace><![CDATA[at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+at OpenQA.Selenium.Firefox.FirefoxDriverCommandExecutor.Execute(Command commandToExecute)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+at OpenQA.Selenium.By.FindElement(ISearchContext context)
+at GMail.Pages.ForwardAlterDialogPage.TapIntoConfirmForwardAdressButton() in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\Pages\ForwardAlterDialogPage.cs:line 45
+at GMail.Handlers.ForwardAlterDialogHandler.SetChangesAndConfirmChoice(String adress) in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\Handlers\ForwardAlterDialogHandler.cs:line 25
+at GMail._1._2.IsGotForwardForLetter._Step_E_SetFofwardParams() in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\1.2\IsGotForwardForLetter.cs:line 61
+--WebException
+at System.Net.HttpWebRequest.GetResponse()
+at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="GMail._1._2.IsGotForwardForLetter._Step_F_LogoutSecondUser" executed="True" result="Error" success="False" time="0.002" asserts="0">
+                        <failure>
+                          <message><![CDATA[System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+                          <stack-trace><![CDATA[at GMail._1._2.IsGotForwardForLetter._Step_F_LogoutSecondUser() in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\1.2\IsGotForwardForLetter.cs:line 67
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="GMail._1._2.IsGotForwardForLetter._Step_G_LoginThirdUser" executed="True" result="Error" success="False" time="60.034" asserts="0">
+                        <failure>
+                          <message><![CDATA[OpenQA.Selenium.WebDriverException : The HTTP request to the remote WebDriver server for URL http://localhost:7055/hub/session/d37ff31e-b816-4f3f-923c-86ef233c82cc/element timed out after 60 seconds.
+  ----> System.Net.WebException : The operation has timed out]]></message>
+                          <stack-trace><![CDATA[at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+at OpenQA.Selenium.Firefox.FirefoxDriverCommandExecutor.Execute(Command commandToExecute)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+at OpenQA.Selenium.By.FindElement(ISearchContext context)
+at OpenQA.Selenium.Support.PageObjects.DefaultElementLocatorFactory.LocateElement(ISearchContext searchContext, IEnumerable`1 bys)
+at OpenQA.Selenium.Support.PageObjects.WebElementProxy.SendKeys(String text)
+at GMail.Pages.LoginPage.SetEmail(String adress) in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\Pages\loginPage.cs:line 35
+at GMail.Handlers.LoginHandler.LoginUser(String adress, String password) in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\Handlers\LoginHandler.cs:line 24
+at GMail._1._2.IsGotForwardForLetter._Step_G_LoginThirdUser() in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\1.2\IsGotForwardForLetter.cs:line 73
+--WebException
+at System.Net.HttpWebRequest.GetResponse()
+at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="GMail._1._2.IsGotForwardForLetter._Step_H_ConfirmForward" executed="True" result="Error" success="False" time="60.018" asserts="0">
+                        <failure>
+                          <message><![CDATA[OpenQA.Selenium.WebDriverException : The HTTP request to the remote WebDriver server for URL http://localhost:7055/hub/session/d37ff31e-b816-4f3f-923c-86ef233c82cc/elements timed out after 60 seconds.
+  ----> System.Net.WebException : The operation has timed out]]></message>
+                          <stack-trace><![CDATA[at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+at OpenQA.Selenium.Firefox.FirefoxDriverCommandExecutor.Execute(Command commandToExecute)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver.FindElements(String mechanism, String value)
+at OpenQA.Selenium.By.FindElements(ISearchContext context)
+at GMail.Pages.MailboxPage.GetSentMessage(String theme, String text) in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\Pages\MailboxPage.cs:line 124
+at GMail.Pages.MailboxPage.ClickIntoSentMessage(String theme, String text) in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\Pages\MailboxPage.cs:line 98
+at GMail.Handlers.MailboxHandler.GetLetter(String theme, String text) in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\Handlers\MailboxHandler.cs:line 72
+at GMail._1._2.IsGotForwardForLetter._Step_H_ConfirmForward() in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\1.2\IsGotForwardForLetter.cs:line 79
+--WebException
+at System.Net.HttpWebRequest.GetResponse()
+at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="Namespace" name="_3" executed="True" result="Failure" success="False" time="102.771" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="IsItPossibleToAttachFileWithSizeMoreThenPermitted" executed="True" result="Failure" success="False" time="102.768" asserts="0">
+                    <results>
+                      <test-case name="GMail._1._3.IsItPossibleToAttachFileWithSizeMoreThenPermitted._Step_A_LoginUser" executed="True" result="Success" success="True" time="2.695" asserts="0" />
+                      <test-case name="GMail._1._3.IsItPossibleToAttachFileWithSizeMoreThenPermitted._Step_B_CreateMessage" executed="True" result="Success" success="True" time="14.122" asserts="0" />
+                      <test-case name="GMail._1._3.IsItPossibleToAttachFileWithSizeMoreThenPermitted._Step_C_AttachFile" executed="True" result="Success" success="True" time="14.789" asserts="0" />
+                      <test-case name="GMail._1._3.IsItPossibleToAttachFileWithSizeMoreThenPermitted._Step_D_DidAttachFile" executed="True" result="Error" success="False" time="60.026" asserts="0">
+                        <failure>
+                          <message><![CDATA[OpenQA.Selenium.WebDriverException : The HTTP request to the remote WebDriver server for URL http://localhost:7055/hub/session/2af61bac-0706-4094-8917-ec3791d041e6/element timed out after 60 seconds.
+  ----> System.Net.WebException : The operation has timed out]]></message>
+                          <stack-trace><![CDATA[at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+at OpenQA.Selenium.Firefox.FirefoxDriverCommandExecutor.Execute(Command commandToExecute)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+at OpenQA.Selenium.By.FindElement(ISearchContext context)
+at OpenQA.Selenium.Support.PageObjects.DefaultElementLocatorFactory.LocateElement(ISearchContext searchContext, IEnumerable`1 bys)
+at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Displayed()
+at GMail.Pages.AttachFilePage.IsAlterDialogExist() in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\Pages\AttachFilePage.cs:line 26
+at GMail.Handlers.AlterDialogToAttachFileHandler.IsSucessfulAttach() in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\Handlers\AlterDialogToAttachFileHandler.cs:line 24
+at GMail._1._3.IsItPossibleToAttachFileWithSizeMoreThenPermitted._Step_D_DidAttachFile() in c:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\1.3\IsItPossibleToAttachFileWithSizeMoreThenPermitted.cs:line 52
+--WebException
+at System.Net.HttpWebRequest.GetResponse()
+at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="Namespace" name="_4" executed="True" result="Inconclusive" success="False" time="0.004" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="IsItPossibleToLoadPictureWithAnIncorrectExtension" executed="True" result="Inconclusive" success="False" time="0.000" asserts="0" />
+                </results>
+              </test-suite>
+              <test-suite type="Namespace" name="_5" executed="True" result="Success" success="True" time="55.118" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="SendLetterWithEmoticon" executed="True" result="Success" success="True" time="55.117" asserts="0">
+                    <results>
+                      <test-case name="GMail._1._5.SendLetterWithEmoticon._Step_A_LoginFirstUser" executed="True" result="Success" success="True" time="2.832" asserts="0" />
+                      <test-case name="GMail._1._5.SendLetterWithEmoticon._Step_B_CreateLetterToSecondUser" executed="True" result="Success" success="True" time="12.347" asserts="0" />
+                      <test-case name="GMail._1._5.SendLetterWithEmoticon._Step_C_SetEmoticons" executed="True" result="Success" success="True" time="5.257" asserts="0" />
+                      <test-case name="GMail._1._5.SendLetterWithEmoticon._Step_D_TapIntoSendButton" executed="True" result="Success" success="True" time="3.591" asserts="0" />
+                      <test-case name="GMail._1._5.SendLetterWithEmoticon._Step_E_GetSentLetter" executed="True" result="Success" success="True" time="13.901" asserts="0" />
+                      <test-case name="GMail._1._5.SendLetterWithEmoticon._Step_F_IsSentLetterContainsCorrectEmoticons" executed="True" result="Success" success="True" time="2.002" asserts="1" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="Namespace" name="_6" executed="True" result="Success" success="True" time="29.008" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="IsUserThemeChange" executed="True" result="Success" success="True" time="29.007" asserts="0">
+                    <results>
+                      <test-case name="GMail._1._6.IsUserThemeChange._Step_A_LoginFistUser" executed="True" result="Success" success="True" time="3.282" asserts="0" />
+                      <test-case name="GMail._1._6.IsUserThemeChange._Step_B_GoToTheSettings" executed="True" result="Success" success="True" time="5.672" asserts="0" />
+                      <test-case name="GMail._1._6.IsUserThemeChange._Step_C_GetTheme" executed="True" result="Success" success="True" time="3.218" asserts="0" />
+                      <test-case name="GMail._1._6.IsUserThemeChange._Step_C_SetTheme" executed="True" result="Success" success="True" time="2.919" asserts="0" />
                     </results>
                   </test-suite>
                 </results>
