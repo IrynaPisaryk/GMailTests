@@ -74,6 +74,8 @@
     <Compile Include="1.5\SendLetterWithEmoticon.cs" />
     <Compile Include="1.6\IsUserThemeChange.cs" />
     <Compile Include="1.7\SendLetterWithMeeting.cs" />
+    <Compile Include="1.8\IsShortcutCreated.cs" />
+    <Compile Include="1.9\IsBothShortcutHasSameColour.cs" />
     <Compile Include="DriverAdapter\Adapter.cs" />
     <Compile Include="gmail.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -81,6 +83,7 @@
       <DependentUpon>gmail.resx</DependentUpon>
     </Compile>
     <Compile Include="Handlers\AlterDialogToAttachFileHandler.cs" />
+    <Compile Include="Handlers\AlterMenuForShortcutHandler.cs" />
     <Compile Include="Handlers\AttachHandler.cs" />
     <Compile Include="Handlers\EmoticonHandler.cs" />
     <Compile Include="Handlers\ForwardAlterDialogHandler.cs" />
@@ -90,8 +93,11 @@
     <Compile Include="Handlers\LogoutHandler.cs" />
     <Compile Include="Handlers\MailboxHandler.cs" />
     <Compile Include="Handlers\SettingsHandler.cs" />
+    <Compile Include="Handlers\ShortcutColorDialogHandler.cs" />
+    <Compile Include="Handlers\ShortcutHandler.cs" />
     <Compile Include="Handlers\SpamHandler.cs" />
     <Compile Include="Handlers\ThemesHandler.cs" />
+    <Compile Include="Pages\AlterShortcutPage.cs" />
     <Compile Include="Pages\AttachFilePage.cs" />
     <Compile Include="Pages\BasePage.cs" />
     <Compile Include="Pages\EmoticonPage.cs" />
@@ -102,6 +108,8 @@
     <Compile Include="Pages\LogoutPage.cs" />
     <Compile Include="Pages\MailboxPage.cs" />
     <Compile Include="Pages\SettingsPage.cs" />
+    <Compile Include="Pages\ShortcutColourDialogPage.cs" />
+    <Compile Include="Pages\ShortcutPage.cs" />
     <Compile Include="Pages\SpamPage.cs" />
     <Compile Include="Pages\ThemesPage.cs" />
   </ItemGroup>

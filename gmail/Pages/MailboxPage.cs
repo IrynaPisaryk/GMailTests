@@ -45,6 +45,20 @@ namespace GMail.Pages
         [FindsBy(How = How.XPath, Using = "//div[@class='a1 aaA aMZ']")]
         private IWebElement AttachFileButton;
 
+        [FindsBy(How = How.XPath, Using = "//div[@class='J-J5-Ji J-Z-I-J6-H']/div[@class='a1 aaA aMZ']")]
+        private IWebElement PaperclipButton;
+
+        [FindsBy(How = How.XPath, Using = "//div[@role='dialog']")]
+        private IWebElement NewLetterDialog;
+
+        [FindsBy(How = How.XPath, Using = "//div[@class='p6']")]
+        private IWebElement ShortcutTriangle;
+
+        [FindsBy(How = How.XPath, Using = "//div[@class='aim']//a[text()='newShortcut']")]
+        private IWebElement NewShortcut;
+
+        [FindsBy(How = How.XPath, Using = "//a[text()='My shortcut']")]
+        private IWebElement MyShortcut;
 
         public MailboxPage(IWebDriver driver) : base(driver)
         {
@@ -189,6 +203,31 @@ namespace GMail.Pages
         {
             SendKeys.SendWait(@"" + path);
             SendKeys.SendWait(@"{Enter}");
+        }
+
+        public void TapIntoPaperClipButton()
+        {
+            PaperclipButton.Click();
+        }
+
+        public bool IsNewLetterDialogExist()
+        {
+            if (NewLetterDialog.Displayed) 
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public void TapIntoTriangleButton()
+        {
+            MyShortcut.SendKeys("");
+            ShortcutTriangle.Click();
+        }
+
+        public bool IsNewShortcutExist()
+        {
+            return NewShortcut.Displayed;
         }
     }
 }

@@ -53,7 +53,19 @@ namespace GMail.Handlers
 
         public MailboxHandler TapIntoSendButton()
         {
-            page.TapIntoSendButton();
+            page.TapIntoWriteButton();
+            return new MailboxHandler(driver);
+        }
+
+        public MailboxHandler TapIntoPaperclipButton()
+        {
+            page.TapIntoPaperClipButton();
+            return new MailboxHandler(driver);
+        }
+
+        public MailboxHandler SetAdress()
+        {
+            page.SetAdress(rm.GetString("adressSecondUser")); 
             return new MailboxHandler(driver);
         }
 
@@ -86,6 +98,22 @@ namespace GMail.Handlers
             page.TapIntoSettingsButton();
             page.TapIntoSettingsMenu();
             return new SettingsHandler(driver);
+        }
+
+        public bool IsNewLetterDialogAppear()
+        {
+            return page.IsNewLetterDialogExist();           
+        }
+
+        public ShortcutHandler GetShotcutDialog()
+        {
+            page.TapIntoTriangleButton();
+            return new ShortcutHandler(driver);
+        }
+
+        public bool IsNewShortcutExist()
+        {
+            return page.IsNewShortcutExist();
         }
     }
 }

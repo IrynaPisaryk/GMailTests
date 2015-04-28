@@ -9,21 +9,20 @@ using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GMail._1._7
+namespace GMail._1._9
 {
     [TestFixture]
-    public class SendLetterWithMeeting
+    public class IsBothShortcutHasSameColour
     {
         private IWebDriver driver;
         private ResourceManager rm = new ResourceManager("GMail.gmail", Assembly.GetExecutingAssembly());
         private LoginHandler loginPage;
         private MailboxHandler mailboxPage;
-        private ThemesHandler themesPage;
-        private LetterHandler letterPage;
-        private SettingsHandler settingsPage;
+        private ShortcutHandler shortcutPage;
+        private ShortcutColorDialogHandler shortcutColorPage;
+        private SpamHandler spamPage;
         private String theme;
         private String text;
-
 
         [TestFixtureSetUp]
         public void BeforeTests()
@@ -34,24 +33,23 @@ namespace GMail._1._7
         }
 
         [Test]
-        public void _Step_A_GetNewLetter()
+        public void _Step_A_ShotcutDialog()
         {
-            mailboxPage = mailboxPage.TapIntoSendButton();
-            Assert.True(mailboxPage.IsNewLetterDialogAppear());
+            shortcutPage = mailboxPage.GetShotcutDialog();
         }
 
         [Test]
-        public void _Step_B_WriteDestination()
+        public void _Step_B_SetColour()
         {
-            mailboxPage = mailboxPage.SetAdress();
+            shortcutColorPage = shortcutPage.SetShortcutColour();
         }
 
         [Test]
-        public void _Step_C_TapIntoPaperclipIcon()
+        public void _Step_C_IsWriteColour()
         {
-            mailboxPage = mailboxPage.TapIntoPaperclipButton();
-            Assert.Fail();           
+            mailboxPage = shortcutColorPage.SetColour();
         }
+
 
         [TestFixtureTearDown]
         public void AfterTests()

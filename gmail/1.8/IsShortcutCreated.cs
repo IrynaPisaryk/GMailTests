@@ -9,21 +9,17 @@ using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GMail._1._7
+namespace GMail._1._8
 {
     [TestFixture]
-    public class SendLetterWithMeeting
+    public class IsShortcutCreated
     {
         private IWebDriver driver;
         private ResourceManager rm = new ResourceManager("GMail.gmail", Assembly.GetExecutingAssembly());
         private LoginHandler loginPage;
         private MailboxHandler mailboxPage;
-        private ThemesHandler themesPage;
-        private LetterHandler letterPage;
-        private SettingsHandler settingsPage;
-        private String theme;
-        private String text;
-
+        private ShortcutHandler shortcutPage;
+        private AlterMenuForShortcutHandler alterShortcutPage;        
 
         [TestFixtureSetUp]
         public void BeforeTests()
@@ -34,30 +30,35 @@ namespace GMail._1._7
         }
 
         [Test]
-        public void _Step_A_GetNewLetter()
+        public void _Step_A_ShotcutDialog()
         {
-            mailboxPage = mailboxPage.TapIntoSendButton();
-            Assert.True(mailboxPage.IsNewLetterDialogAppear());
+            shortcutPage = mailboxPage.GetShotcutDialog();
         }
 
         [Test]
-        public void _Step_B_WriteDestination()
+        public void _Step_B_PreparingToCreateNewShortcut()
         {
-            mailboxPage = mailboxPage.SetAdress();
+            alterShortcutPage = shortcutPage.GetNewShortcut();
         }
 
         [Test]
-        public void _Step_C_TapIntoPaperclipIcon()
+        public void _Step_C_CreateNewShortcut()
         {
-            mailboxPage = mailboxPage.TapIntoPaperclipButton();
-            Assert.Fail();           
+            mailboxPage = alterShortcutPage.CreateNewShortcut();
         }
 
+        [Test]
+        public void _Step_D_IsNewShortcutExist()
+        {
+            Assert.True(mailboxPage.IsNewShortcutExist());
+        }
+        
         [TestFixtureTearDown]
         public void AfterTests()
         {
             driver.Quit();
             DriverAdapter.Adapter.Instance = null;
         }
+
     }
 }
