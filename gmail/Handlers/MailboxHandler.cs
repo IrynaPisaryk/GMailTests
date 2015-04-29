@@ -115,5 +115,12 @@ namespace GMail.Handlers
         {
             return page.IsNewShortcutExist();
         }
+
+        public ShortcutHandler PrepareToDeleteShortcuts()
+        {
+            page.TapIntoTriangleButton();
+            page.TapIntoDeleteShortcutButton();
+            return new ShortcutHandler(driver);
+        }
     }
 }

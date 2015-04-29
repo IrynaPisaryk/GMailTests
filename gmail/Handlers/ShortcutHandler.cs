@@ -35,5 +35,11 @@ namespace GMail.Handlers
             return new ShortcutColorDialogHandler(driver);
         }
 
+        public MailboxHandler DeleteShortcuts()
+        {
+            page.TapIntoDeleteButton();            
+            return new MailboxHandler(driver);
+        }
+
     }
 }

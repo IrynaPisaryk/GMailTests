@@ -14,17 +14,11 @@ namespace GMail._1._7
     [TestFixture]
     public class SendLetterWithMeeting
     {
-
         private IWebDriver driver;
         private ResourceManager rm = new ResourceManager("GMail.gmail", Assembly.GetExecutingAssembly());
         private LoginHandler loginPage;
         private MailboxHandler mailboxPage;
-        private ThemesHandler themesPage;
-        private LetterHandler letterPage;
-        private SettingsHandler settingsPage;
-        private String theme;
-        private String text;
-
+        
 
         [TestFixtureSetUp]
         public void BeforeTests()

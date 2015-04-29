@@ -9,18 +9,17 @@ using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GMail._1._9
+namespace GMail._1._10
 {
-    [TestFixture]
-    public class IsBothShortcutHasSameColour
+    public class IsShortcutsDeleted
     {
+
         private IWebDriver driver;
         private ResourceManager rm = new ResourceManager("GMail.gmail", Assembly.GetExecutingAssembly());
         private LoginHandler loginPage;
         private MailboxHandler mailboxPage;
         private ShortcutHandler shortcutPage;
-        private ShortcutColorDialogHandler shortcutColorPage;
-        
+        private AlterMenuForShortcutHandler alterShortcutPage;
 
         [TestFixtureSetUp]
         public void BeforeTests()
@@ -33,21 +32,14 @@ namespace GMail._1._9
         [Test]
         public void _Step_A_ShotcutDialog()
         {
-            shortcutPage = mailboxPage.GetShotcutDialog();
+            shortcutPage = mailboxPage.PrepareToDeleteShortcuts();
         }
 
         [Test]
-        public void _Step_B_SetColour()
+        public void _Step_B_PrepareToDelete()
         {
-            shortcutColorPage = shortcutPage.SetShortcutColour();
+            mailboxPage = shortcutPage.DeleteShortcuts();
         }
-
-        [Test]
-        public void _Step_C_IsWriteColour()
-        {
-            mailboxPage = shortcutColorPage.SetColour();
-        }
-
 
         [TestFixtureTearDown]
         public void AfterTests()

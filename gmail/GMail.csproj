@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="1.9_10\IsShortcutsDeleted.cs" />
     <Compile Include="1.1\IsSentLetterInSpam.cs" />
     <Compile Include="1.2\IsGotForwardForLetter.cs" />
     <Compile Include="1.3\IsItPossibleToAttachFileWithSizeMoreThenPermitted.cs" />

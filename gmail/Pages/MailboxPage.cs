@@ -60,6 +60,9 @@ namespace GMail.Pages
         [FindsBy(How = How.XPath, Using = "//a[text()='My shortcut']")]
         private IWebElement MyShortcut;
 
+        [FindsBy(How = How.XPath, Using = "//div[text()='Удалить ярлык']")]
+        private IWebElement DeleteShortcuts;
+
         public MailboxPage(IWebDriver driver) : base(driver)
         {
             this.driver = driver;
@@ -228,6 +231,11 @@ namespace GMail.Pages
         public bool IsNewShortcutExist()
         {
             return NewShortcut.Displayed;
+        }
+
+        public void TapIntoDeleteShortcutButton()
+        {
+            DeleteShortcuts.Click();
         }
     }
 }

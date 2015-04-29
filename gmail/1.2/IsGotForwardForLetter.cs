@@ -13,7 +13,6 @@ namespace GMail._1._2
     [TestFixture]
 	public class IsGotForwardForLetter
 	{
-
         private IWebDriver driver;
         private ResourceManager rm = new ResourceManager("GMail.gmail", Assembly.GetExecutingAssembly());
         private LoginHandler loginPage;

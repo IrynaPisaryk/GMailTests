@@ -15,7 +15,6 @@ namespace GMail._1._1
     [TestFixture]
     public sealed class IsSentLetterInSpam
     {
-
         private IWebDriver driver;
         private ResourceManager rm = new ResourceManager("GMail.gmail", Assembly.GetExecutingAssembly());
         private LoginHandler loginPage;

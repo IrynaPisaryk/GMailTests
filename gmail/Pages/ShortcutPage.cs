@@ -21,6 +21,9 @@ namespace GMail.Pages
         [FindsBy(How = How.XPath, Using = "//div[@title='RGB (242, 178, 168)']")]
         private IWebElement SetColour;
 
+        [FindsBy(How = How.XPath, Using = "//button[text()='Удалить']")]
+        private IWebElement DeleteButton;
+
         public ShortcutPage(IWebDriver driver) : base(driver)
         {
             this.driver = driver;
@@ -41,6 +44,11 @@ namespace GMail.Pages
         public void ChooseColour()
         {
             SetColour.Click();
+        }
+
+        public void TapIntoDeleteButton()
+        {
+            DeleteButton.Click();
         }
     }
 }

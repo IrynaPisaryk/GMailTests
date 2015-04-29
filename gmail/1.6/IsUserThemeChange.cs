@@ -14,7 +14,6 @@ namespace GMail._1._6
     [TestFixture]
     public class IsUserThemeChange
     {
-
         private IWebDriver driver;
         private ResourceManager rm = new ResourceManager("GMail.gmail", Assembly.GetExecutingAssembly());
         private LoginHandler loginPage;
