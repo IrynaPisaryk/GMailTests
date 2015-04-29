@@ -15,6 +15,7 @@ namespace GMail._1._5
     [TestFixture]
     public class SendLetterWithEmoticon
     {
+
         private IWebDriver driver;
         private ResourceManager rm = new ResourceManager("GMail.gmail", Assembly.GetExecutingAssembly());
         private LoginHandler loginPage;

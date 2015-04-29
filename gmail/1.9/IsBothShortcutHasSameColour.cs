@@ -14,6 +14,7 @@ namespace GMail._1._9
     [TestFixture]
     public class IsBothShortcutHasSameColour
     {
+
         private IWebDriver driver;
         private ResourceManager rm = new ResourceManager("GMail.gmail", Assembly.GetExecutingAssembly());
         private LoginHandler loginPage;

@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
-  <TopNode>[0-1042]C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\bin\debug\GMail.dll</TopNode>
-  <SelectedNode>[0-1041]GMail._1._7.SendLetterWithMeeting</SelectedNode>
+  <TopNode>[0-1007]GMail._1._1.IsSentLetterInSpam._Step_G_LogoutSecondUser</TopNode>
+  <SelectedNode>[0-1046]GMail._1._8.IsShortcutCreated._Step_A_ShotcutDialog</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
-    <Node UniqueName="[0-1042]C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\bin\debug\GMail.dll" Expanded="true" />
-    <Node UniqueName="[0-1043]GMail" Expanded="true" />
-    <Node UniqueName="[0-1044]GMail._1" Expanded="true" />
-    <Node UniqueName="[0-1045]GMail._1._1" Expanded="true" />
+    <Node UniqueName="[0-1054]C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\bin\debug\GMail.dll" Expanded="true" />
+    <Node UniqueName="[0-1055]GMail" Expanded="true" />
+    <Node UniqueName="[0-1056]GMail._1" Expanded="true" />
+    <Node UniqueName="[0-1057]GMail._1._1" Expanded="true" />
     <Node UniqueName="[0-1000]GMail._1._1.IsSentLetterInSpam" Expanded="true" />
-    <Node UniqueName="[0-1046]GMail._1._2" Expanded="true" />
+    <Node UniqueName="[0-1058]GMail._1._2" Expanded="true" />
     <Node UniqueName="[0-1014]GMail._1._2.IsGotForwardForLetter" Expanded="true" />
-    <Node UniqueName="[0-1047]GMail._1._3" Expanded="true" />
+    <Node UniqueName="[0-1059]GMail._1._3" Expanded="true" />
     <Node UniqueName="[0-1023]GMail._1._3.IsItPossibleToAttachFileWithSizeMoreThenPermitted" Expanded="true" />
-    <Node UniqueName="[0-1048]GMail._1._4" Expanded="true" />
-    <Node UniqueName="[0-1049]GMail._1._5" Expanded="true" />
+    <Node UniqueName="[0-1060]GMail._1._4" Expanded="true" />
+    <Node UniqueName="[0-1061]GMail._1._5" Expanded="true" />
     <Node UniqueName="[0-1029]GMail._1._5.SendLetterWithEmoticon" Expanded="true" />
-    <Node UniqueName="[0-1050]GMail._1._6" Expanded="true" />
+    <Node UniqueName="[0-1062]GMail._1._6" Expanded="true" />
     <Node UniqueName="[0-1036]GMail._1._6.IsUserThemeChange" Expanded="true" />
-    <Node UniqueName="[0-1051]GMail._1._7" Expanded="true" />
+    <Node UniqueName="[0-1063]GMail._1._7" Expanded="true" />
+    <Node UniqueName="[0-1041]GMail._1._7.SendLetterWithMeeting" Expanded="true" />
+    <Node UniqueName="[0-1064]GMail._1._8" Expanded="true" />
+    <Node UniqueName="[0-1045]GMail._1._8.IsShortcutCreated" Expanded="true" />
+    <Node UniqueName="[0-1065]GMail._1._9" Expanded="true" />
+    <Node UniqueName="[0-1050]GMail._1._9.IsBothShortcutHasSameColour" Expanded="true" />
   </Nodes>
 </VisualState>

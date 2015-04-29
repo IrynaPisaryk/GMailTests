@@ -11,6 +11,7 @@ namespace GMail._1._4
     [TestFixture]
     public class IsItPossibleToLoadPictureWithAnIncorrectExtension
     {
+
        
     }
 }

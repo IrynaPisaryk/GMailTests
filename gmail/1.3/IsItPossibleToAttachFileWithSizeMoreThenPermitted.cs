@@ -12,6 +12,7 @@ namespace GMail._1._3
 {
 	public class IsItPossibleToAttachFileWithSizeMoreThenPermitted
 	{       
+
         private IWebDriver driver;
         private ResourceManager rm = new ResourceManager("GMail.gmail", Assembly.GetExecutingAssembly());
         private LoginHandler loginPage;
