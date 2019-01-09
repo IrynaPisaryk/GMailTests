@@ -40,7 +40,7 @@ namespace GMail._1._10
         {
             mailboxPage = shortcutPage.DeleteShortcuts();
         }
-
+        
         [TestFixtureTearDown]
         public void AfterTests()
         {

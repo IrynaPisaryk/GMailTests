@@ -44,3 +44,19 @@ C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\obj\Deb
 C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\obj\Debug\GMail.csproj.GenerateResource.Cache
 C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\obj\Debug\GMail.dll
 C:\Users\Irina_Pisarik\Documents\Visual Studio 2013\Projects\gmail\gmail\obj\Debug\GMail.pdb
+D:\hren'\TAlab\gmail\GMail\bin\Debug\GMail.dll.config
+D:\hren'\TAlab\gmail\GMail\bin\Debug\GMail.dll
+D:\hren'\TAlab\gmail\GMail\bin\Debug\GMail.pdb
+D:\hren'\TAlab\gmail\GMail\bin\Debug\nunit.core.dll
+D:\hren'\TAlab\gmail\GMail\bin\Debug\nunit.core.interfaces.dll
+D:\hren'\TAlab\gmail\GMail\bin\Debug\nunit.framework.dll
+D:\hren'\TAlab\gmail\GMail\bin\Debug\nunit.util.dll
+D:\hren'\TAlab\gmail\GMail\bin\Debug\Selenium.WebDriverBackedSelenium.dll
+D:\hren'\TAlab\gmail\GMail\bin\Debug\ThoughtWorks.Selenium.Core.dll
+D:\hren'\TAlab\gmail\GMail\bin\Debug\WebDriver.dll
+D:\hren'\TAlab\gmail\GMail\bin\Debug\WebDriver.Support.dll
+D:\hren'\TAlab\gmail\GMail\obj\Debug\GMail.csprojResolveAssemblyReference.cache
+D:\hren'\TAlab\gmail\GMail\obj\Debug\GMail.gmail.resources
+D:\hren'\TAlab\gmail\GMail\obj\Debug\GMail.csproj.GenerateResource.Cache
+D:\hren'\TAlab\gmail\GMail\obj\Debug\GMail.dll
+D:\hren'\TAlab\gmail\GMail\obj\Debug\GMail.pdb
